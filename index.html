@@ -1,7 +1,21 @@
 <html>
-
+<head>
+<style>
+    .container {
+        position: absolute;
+        left: 50%; /* relative to nearest positioned ancestor or body element */
+        top: 50%; /*  relative to nearest positioned ancestor or body element */
+        transform: translate(-50%, -50%); /* relative to element's height & width */
+        font-size: 100px;
+    }
+</style>
+</head>
 <title>Eu sou pobre?</title>
 
-<body>Sim!</body>
+<body style="background-color:tomato;">
+    <div class="container" style="color:whitesmoke;font-weight: bold;">
+        Sim!
+    </div>
+</body>
 
 </html>
