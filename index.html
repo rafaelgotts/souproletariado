@@ -13,9 +13,14 @@
 <title>Eu sou proletariado?</title>
 
 <body style="background-color:tomato;">
-    <div class="container" style="color:whitesmoke;font-weight: bold;">
-        Sim!
+    <div class="container" style="color:whitesmoke;font-weight: bold;" id="container">
     </div>
+<script>
+function getResponse() {
+    const responses = ["Sim!", "Com certeza!", "Não esquece de preparar a marmita", "Não vai dormir tarde, que depois perde o ônibus", "Hoje não é dia do seu pagamento"];
+    document.getElementById("container").innerHTML = responses[Math.floor(Math.random() * responses.length)];
+}
+window.onload = getResponse;
+</script>
 </body>
-
 </html>
